@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f1e8;
+  margin: 0;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.choose-painting {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* ---------------- PAINTINGS ---------------- */
+
+.paintings {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.card {
+  width: 250px;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.card p {
+  text-align: center;
+  padding: 16px;
+  font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* ---------------- CHAT SECTION ---------------- */
+
+.chat-section {
+  max-width: 750px;
+  margin: auto;
+}
+
+.chat-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 34px;
+}
+
+.character-text {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 18px;
+}
+
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* ---------------- CHAT WINDOW ---------------- */
+
+.chat-window {
+  height: 400px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Chat bubbles */
+
+.message {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 18px;
+  line-height: 1.4;
+  font-size: 15px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background: #000;
+  color: white;
+  border-bottom-right-radius: 6px;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background: #eee;
+  color: #222;
+  border-bottom-left-radius: 6px;
+}
+
+/* ---------------- INPUT AREA ---------------- */
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+textarea {
+  flex: 1;
+  min-height: 60px;
+  max-height: 120px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  resize: none;
+}
+
+button {
+  width: 120px;
+  padding: 12px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}

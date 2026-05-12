@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paint Chat</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <h1>🎨 Paint Chat</h1>
+
+  <p class="subtitle">Step into the painting</p>
+  <p class="choose-painting">
+    Select a painting and choose a character to begin a conversation.
+  </p>
+
+  <div class="paintings">
+    <div class="card" data-painting="Stolen Interview">
+      <img src="images/stolen.jpg"/>
+      <p>Stolen Interview</p>
+    </div>
+
+    <div class="card" data-painting="Damayanti and the Swan">
+      <img src="images/damayanti.jpg"/>
+      <p>Damayanti and the Swan</p>
+    </div>
+
+    <div class="card" data-painting="Mohini on a Swing">
+      <img src="images/mohini.jpg"/>
+      <p>Mohini on a Swing</p>
+    </div>
+  </div>
+
+  <div class="chat-section">
+    <h2 id="selectedPainting"></h2>
+    <p class="character-text">Choose a character</p>
+    <select id="characterSelect"></select>
+
+    <div id="chatWindow" class="chat-window"></div>
+
+    <div class="input-area">
+      <textarea id="messageInput" placeholder="Type..."></textarea>
+      <button id="sendBtn" type="button">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
